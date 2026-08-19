@@ -1,0 +1,5 @@
+alias g='git'
+alias galias='git config --get-regexp alias'
+alias hidden='ls -ld .?*'
+alias ll='ls -l'
+alias ls='ls -F --color=auto'

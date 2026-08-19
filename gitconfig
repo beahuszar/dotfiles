@@ -1,0 +1,31 @@
+[includeIf "gitdir:~/Documents/pet-projects/"]
+	path = ~/.gitconfig-personal
+
+[alias]
+	co = checkout
+	br = branch
+	f = !git fetch && git status
+	st = status
+	cont = rebase --continue
+	unstage = reset HEAD --
+	ci = commit
+	cp = cherry-pick
+	cl = clone
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lgr = log --graph --pretty=format:'%h - %s (%cd) %an%b' --color=never --date=short
+	lgx = log --pretty=format:' * %s' --color=never
+	lgrc = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset%b'
+	le = log --oneline --decorate
+	l = log -n 10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	last = log -1 HEAD
+	r = reset
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+	rh = reset --hard
+	rh1 = reset HEAD^ --hard
+	rh2 = reset HEAD^^ --hard
+	fdel = clean -df
+	alias = config --get-regexp alias
+	rename = branch -m
+	url = config --get remote.origin.url
+	np = push --set-upstream origin

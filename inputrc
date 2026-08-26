@@ -1,0 +1,13 @@
+# Pull in the system defaults (Home/End, Ctrl+arrow word-jump, etc.)
+$include /etc/inputrc
+
+# --- smarter Tab completion ---
+# Single Tab press completes/cycles instead of just listing matches.
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set colored-stats on
+set colored-completion-prefix on
+set menu-complete-display-prefix on
+
+TAB: menu-complete
+"\e[Z": menu-complete-backward

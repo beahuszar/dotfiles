@@ -54,6 +54,7 @@ ensure_git_include() {
 link_file "${DOTFILES_DIR}/zshrc" "${HOME}/.zshrc"
 link_file "${DOTFILES_DIR}/bash_aliases" "${HOME}/.bash_aliases"
 link_file "${DOTFILES_DIR}/gitconfig-personal" "${HOME}/.gitconfig-personal"
+link_file "${DOTFILES_DIR}/inputrc" "${HOME}/.inputrc"
 
 # .bashrc is never symlinked — provisioning scripts append to the real file
 # directly (session banners, env exports). Source our extras from it instead.

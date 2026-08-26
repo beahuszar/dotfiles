@@ -3,6 +3,7 @@
 
 [alias]
 	co = checkout
+	cm = checkout master
 	br = branch
 	f = !git fetch && git status
 	st = status
